@@ -12,7 +12,7 @@ from pypdf import PdfReader
 
 load_dotenv()  # reads GEMINI_API_KEY from the .env file
 
-MODEL = "gemini-3.8-flash"  # free-tier model; if it errors, check the name in Google AI Studio
+MODEL = "gemini-3.5-flash-lite"  # stable, lower-cost model available to this project
 CHUNK_SIZE = 800      # characters per chunk
 CHUNK_OVERLAP = 150   # overlap so sentences aren't cut off between chunks
 TOP_K = 4             # how many chunks to retrieve per question
